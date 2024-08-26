@@ -1,0 +1,179 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplychain-api-1 #Update for all attributes
+spec:
+  selector:
+    matchLabels:
+      app: stress 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: stress
+    spec:
+      containers:
+      - image: opsmx11/supplychain-api:86406ac-1790
+        name: supplychain-api-testing1 #update for all attributes		
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplychain-api-2
+spec:
+  selector:
+    matchLabels:
+      app: stress 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: stress
+    spec:
+      containers:
+      - image: opsmx11/supplychain-api:86406ac-1791
+        name: supplychain-api-testing2		
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplychain-api-3
+spec:
+  selector:
+    matchLabels:
+      app: stress 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: stress
+    spec:
+      containers:
+      - image: opsmx11/supplychain-api:268111b-1792
+        name: supplychain-api-testing3		
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplychain-api-4
+spec:
+  selector:
+    matchLabels:
+      app: stress 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: stress
+    spec:
+      containers:
+      - image: opsmx11/supplychain-api:0810713-1793
+        name: supplychain-api-testing4	
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplychain-api-5
+spec:
+  selector:
+    matchLabels:
+      app: stress 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: stress
+    spec:
+      containers:
+      - image: opsmx11/supplychain-api:ecc890f-1794
+        name: supplychain-api-testing5
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplychain-api-6
+spec:
+  selector:
+    matchLabels:
+      app: stress 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: stress
+    spec:
+      containers:
+      - image: opsmx11/supplychain-api:9f70dc7-1795
+        name: supplychain-api-testing6
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplychain-api-7
+spec:
+  selector:
+    matchLabels:
+      app: stress 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: stress
+    spec:
+      containers:
+      - image: opsmx11/supplychain-api:2b86c93-1796
+        name: supplychain-api-testing7
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplychain-api-8
+spec:
+  selector:
+    matchLabels:
+      app: stress 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: stress
+    spec:
+      containers:
+      - image: opsmx11/supplychain-api:ffde67d-1797
+        name: supplychain-api-testing8
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplychain-api-9
+spec:
+  selector:
+    matchLabels:
+      app: stress 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: stress
+    spec:
+      containers:
+      - image: opsmx11/supplychain-api:3befba1-1798
+        name: supplychain-api-testing9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supplychain-api-10
+spec:
+  selector:
+    matchLabels:
+      app: stress 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: stress
+    spec:
+      containers:
+      - image: opsmx11/supplychain-api:78952cc-1799
+        name: supplychain-api-testing10
