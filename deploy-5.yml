@@ -1,0 +1,89 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dbom1 #Update for all attributes
+spec:
+  selector:
+    matchLabels:
+      app: dbom 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: dbom
+    spec:
+      containers:
+      - image: opsmx11/docker-swarm:9839424-1051
+        name: dbom-testing1 #update for all attributes		
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dbom2
+spec:
+  selector:
+    matchLabels:
+      app: dbom 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: dbom
+    spec:
+      containers:
+      - image: opsmx11/docker-swarm:9839424-1052
+        name: dbom-testing2		
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dbom3
+spec:
+  selector:
+    matchLabels:
+      app: dbom 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: dbom
+    spec:
+      containers:
+      - image: opsmx11/docker-swarm:9839424-1053
+        name: dbom-testing3		
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dbom4
+spec:
+  selector:
+    matchLabels:
+      app: dbom 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: dbom
+    spec:
+      containers:
+      - image: opsmx11/docker-swarm:9839424-1054
+        name: dbom-testing4	
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dbom5
+spec:
+  selector:
+    matchLabels:
+      app: dbom 
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: dbom
+    spec:
+      containers:
+      - image: opsmx11/docker-swarm:9839424-1055
+        name: dbom-testing5
